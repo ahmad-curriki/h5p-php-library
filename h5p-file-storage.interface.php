@@ -223,4 +223,9 @@ interface H5PFileStorage {
    * @return bool
    */
   public function saveFileFromZip($path, $file, $stream);
+
+  /**
+   * Wait for any async pending file transfers
+   */
+  public function waitForPendingPromises();
 }
